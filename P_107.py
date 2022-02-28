@@ -2,7 +2,7 @@ import plotly.graph_objects as go
 import pandas as pd
 import plotly.express as px
 
-df=pd.read_csv("py/Student_vs_Levels.csv")
+df=pd.read_csv("Student_vs_Levels.csv")
 print(df.groupby("level")["attempt"].mean())
 
 fig=go.Figure(go.Scatter(
